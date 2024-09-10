@@ -56,8 +56,8 @@
 
 <body>
   <nav class="w-full fixed h-12 mb-10 select-none">
-    <ul class="text-sm px-8 items-center text-gray-300">
-      <li class="text-lg mr-6 font-bold text-yellow-500"><a href="#head">LOYALTIX</a></li>
+    <ul class="text-sm px-8 items-center text-slate-400">
+      <li class="text-lg mr-6 font-bold text-white"><a href="#head">LOYALTIX</a></li>
       <li class="mr-6">
         <a href="#overview">Overview</a>
       </li>
@@ -108,39 +108,29 @@
             <li><strong>Balance sheet liabilities.</strong> A significant issue for program operators is the accumulation of unredeemed rewards, which are recorded as liabilities on their balance sheets.</li>
           </ul>
         </section>
-        <section id="modal">
-        <button class="contrast" data-target="modal-example" onclick="toggleModal(event)">
-          Blockchain
-        </button>
+         <section id="accordions">
+        <h2>Accordions</h2>
+        <details>
+          <summary>Accordion 1</summary>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna diam,
+            tincidunt nec porta sed, auctor id velit. Etiam venenatis nisl ut orci consequat, vitae
+            tempus quam commodo. Nulla non mauris ipsum. Aliquam eu posuere orci. Nulla convallis
+            lectus rutrum quam hendrerit, in facilisis elit sollicitudin. Mauris pulvinar pulvinar
+            mi, dictum tristique elit auctor quis. Maecenas ac ipsum ultrices, porta turpis sit
+            amet, congue turpis.
+          </p>
+        </details>
+        <details open>
+          <summary>Accordion 2</summary>
+          <ul>
+            <li>Vestibulum id elit quis massa interdum sodales.</li>
+            <li>Nunc quis eros vel odio pretium tincidunt nec quis neque.</li>
+            <li>Quisque sed eros non eros ornare elementum.</li>
+            <li>Cras sed libero aliquet, porta dolor quis, dapibus ipsum.</li>
+          </ul>
+        </details>
       </section>
-        <dialog id="modal-example">
-      <article>
-        <header>
-          <button
-            aria-label="Close"
-            rel="prev"
-            data-target="modal-example"
-            onclick="toggleModal(event)"
-          ></button>
-          <h3>Confirm your action!</h3>
-        </header>
-        <p>
-          Cras sit amet 
-        </p>
-        <footer>
-          <button
-            role="button"
-            class="secondary"
-            data-target="modal-example"
-            onclick="toggleModal(event)"
-          >
-            Cancel</button
-          ><button autofocus data-target="modal-example" onclick="toggleModal(event)">
-            Confirm
-          </button>
-        </footer>
-      </article>
-    </dialog>
         <section id="article">
           <article class="bg-yellow-100 p-8">
             <h5>Definitions</h5>
@@ -189,6 +179,7 @@
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
   <script src="modal.js"></script>
 </body>
 
