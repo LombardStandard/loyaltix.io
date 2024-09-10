@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+
 <head>
   <meta charset="utf-8">
   <title>Loyaltix</title>
@@ -28,54 +29,50 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <link href="https://unpkg.com/pattern.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <style>
-         html {
-         scroll-behavior: smooth; 
-         }
-         :target {
-         scroll-margin-top: 70px;
-         }
-    
+    html {
+      scroll-behavior: smooth;
+    }
 
-  
-    nav, header {
-  --s: 100px; /* control the size*/
-  --c1: #1e293b;
-  --c2: #0f172a;
-  --c3: #020617;
-  
-  background:
-    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
-     calc(.5*var(--s)) calc(.5*var(--s)*0.577),
-    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
-  background-size: var(--s) calc(var(--s)*0.577);
-}
+    :target {
+      scroll-margin-top: 70px;
+    }
 
-      </style>
+    nav,
+    header {
+      --s: 100px;
+      /* control the size*/
+      --c1: #1e293b;
+      --c2: #0f172a;
+      --c3: #020617;
+      background:
+        repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
+      background-size: var(--s) calc(var(--s)*0.577);
+    }
+  </style>
 </head>
 
 <body>
-        <nav class="w-full fixed h-12 mb-10 select-none">
-          <ul class="text-base max-w-4xl mx-auto px-8 items-center text-gray-300">
-            <li class="mr-6 font-bold text-yellow-400"><a href="#head">✶ LOYALTIX</a></li>
-            <li class="mr-6">
-    <a href="#overview">Overview</a>
-  </li>
-  <li class="mr-6">
-    <a href="#challenges">Challenges</a>
-  </li>
-  <li class="mr-6">
-    <a class="text-blue-500 hover:text-blue-800" href="#">Link</a>
-  </li>
-  <li class="mr-6">
-    <a class="text-gray-400 cursor-not-allowed" href="#">Disabled</a>
-  </li>
-</ul>
-          
-          
-          
-        </nav>
+  <nav class="w-full fixed h-12 mb-10 select-none">
+    <ul class="text-sm px-8 items-center text-gray-300">
+      <li class="text-lg mr-6 font-bold text-yellow-500"><a href="#head">LOYALTIX</a></li>
+      <li class="mr-6">
+        <a href="#overview">Overview</a>
+      </li>
+      <li class="mr-6">
+        <a href="#problem">Problem</a>
+      </li>
+      <li class="mr-6">
+        <a class="text-blue-500 hover:text-blue-800" href="#">Link</a>
+      </li>
+      <li class="mr-6">
+        <a class="text-gray-400 cursor-not-allowed" href="#">Disabled</a>
+      </li>
+    </ul>
+
+  </nav>
 
   <header class="w-full h-40 pointer-events-none select-none" id="head"></header>
   <div class="container pt-20 max-w-3xl mx-auto px-8 pointer-events-none select-none">
@@ -102,29 +99,62 @@
             As the industry evolves, smaller operators must find innovative ways to build customer loyalty without the extensive resources available to their larger competitors. <br>
         </section>
 
-        <section id="challenges">
-          <h3 class="text-2xl font-bold pb-3">Challenges</h3>
+        <section id="problem">
+          <h3 class="text-2xl font-bold pb-3">Problem</h3>
           <ul class="ml-5">
-            <li><strong>Network and setup costs</strong> Traditional loyalty programs are challenging to establish, requiring substantial investment and resources to manage. The effectiveness of these programs depends on building a network of vendors willing to accept loyalty points as currency. However, vendors may hesitate to participate due to concerns about delayed payments or the risk of data breaches. Additionally, considerable resources are needed to validate transactions.</li>
+            <li><strong>Network and setup costs.</strong> Traditional loyalty programs are challenging to establish, requiring substantial investment and resources to manage. The effectiveness of these programs depends on building a network of vendors willing to accept loyalty points as currency. However, vendors may hesitate to participate due to concerns about delayed payments or the risk of data breaches. Additionally, considerable resources are needed to validate transactions.</li>
             <li><strong>System integration and intermediaries. </strong> The absence of standardized systems leads to the need for complex integration between various platforms and entities, increasing both costs and security risks. Further complications arise from the involvement of intermediaries such as banks, which add extra costs and complexity.</li>
             <li><strong>Customer satisfaction. </strong>From the customer's perspective, loyalty programs can be restrictive, offering limited flexibility in redeeming rewards, which reduces the usability of points. Inactive accounts, low redemption rates, overlapping rewards, lengthy approval processes, time delays, and high transaction fees all contribute to low customer retention.</li>
             <li><strong>Balance sheet liabilities.</strong> A significant issue for program operators is the accumulation of unredeemed rewards, which are recorded as liabilities on their balance sheets.</li>
           </ul>
         </section>
+        <section id="modal">
+        <button class="contrast" data-target="modal-example" onclick="toggleModal(event)">
+          Blockchain
+        </button>
+      </section>
+        <dialog id="modal-example">
+      <article>
+        <header>
+          <button
+            aria-label="Close"
+            rel="prev"
+            data-target="modal-example"
+            onclick="toggleModal(event)"
+          ></button>
+          <h3>Confirm your action!</h3>
+        </header>
+        <p>
+          Cras sit amet 
+        </p>
+        <footer>
+          <button
+            role="button"
+            class="secondary"
+            data-target="modal-example"
+            onclick="toggleModal(event)"
+          >
+            Cancel</button
+          ><button autofocus data-target="modal-example" onclick="toggleModal(event)">
+            Confirm
+          </button>
+        </footer>
+      </article>
+    </dialog>
         <section id="article">
+          <article class="bg-yellow-100 p-8">
+            <h5>Definitions</h5>
 
-          <article class="bg-gray-200">
-            <h3>Definitions</h3>
-
-            * Blockchain: A blockchain, is a growing list of records, called blocks, which are linked using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. By design, a blockchain is resistant to modification of the data.
+            Blockchain: A blockchain, is a growing list of records, called blocks, which are linked using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. By design, a blockchain is resistant to modification of the data.
             * Public Chain: A blockchain that is accessible to the public. While data can be encrypted on this chain, all data can be inspected and verified by the public (even if one can’t see the specific data, a hash of the data can suffice as proof it was written).
             * Private Chain: Blockchains that are private (or permissioned) work similarly to public blockchains but with access controls that restrict those that can join the network
             * Smart Contract: A smart contract is a computer protocol intended to digitally facilitate, verify, or enforce the negotiation or performance of a contract. Smart contracts allow the performance of credible transactions without third parties.
             * Foreign Key: A foreign key is a field in one table of a database that uniquely identifies a row of another/same table.
 
           </article>
-
-          Blockchain solution
+        </section>
+        <section id="solution">
+          <h3 class="text-2xl font-bold pb-3">Solution</h3>
 
           Reducing costs. Clear cost savings are identifiable on three major levels: system management, transactional, and customer acquisition. A blockchain-based loyalty rewards program should reduce the resources required for system management and accounting. In addition the user-friendly technology, the personalised mobile applications, and the integration with social media, should boost customer retention and reduce Customer Acquisition Costs.
 
@@ -159,7 +189,7 @@
       </div>
     </div>
   </div>
-  <script src="minimal-theme-switcher.js"></script>
+  <script src="modal.js"></script>
 </body>
 
 </html>
