@@ -28,7 +28,6 @@
   <link rel="canonical" href="https://servpost.email" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     html {
       scroll-behavior: smooth;
@@ -53,7 +52,7 @@
   </style>
 </head>
 
-<body>
+<body class="bg-slate-200">
   <nav class="w-full fixed h-12 mb-10 select-none">
     <ul class="text-sm px-8 items-center text-slate-400">
       <li class="text-lg mr-6 font-extrabold text-white"><a href="#head">LOYALTIX</a></li>
@@ -64,7 +63,7 @@
         <a href="#problem">Problem</a>
       </li>
       <li class="mr-6">
-        <a class="text-blue-500 hover:text-blue-800" href="#">Link</a>
+        <a href="#solution">Solution</a>
       </li>
       <li class="mr-6">
         <a class="text-gray-400 cursor-not-allowed" href="#">Disabled</a>
@@ -72,20 +71,14 @@
     </ul>
 
   </nav>
-
   <header class="w-full h-40 select-none" id="head"></header>
-  <div class="container pt-20 max-w-3xl mx-auto px-8 select-none">
-
-    <div>
-      <hgroup>
-        <h1 class="text-3xl font-bold">Loyaltix: a blockchain-based Loyalty Reward Token (LRT) for the hospitality business in Asia-Pacific</h1>
-
-        <p>High-level product strategy and technical architecture</p>
-      </hgroup>
-      <code>March 2019</code>
-
-    </div>
-    <div class="flex flex-row pt-12">
+  <main class="container pt-20 max-w-3xl mx-auto px-8 select-none">
+    <hgroup>
+      <h1 class="text-3xl font-bold">Loyaltix: a blockchain-based Loyalty Reward Token (LRT) for the hospitality business in Asia-Pacific</h1>
+      <p>High-level product strategy and technical architecture</p>
+    </hgroup>
+    <code>March 2019</code>
+    <div class="pt-12">
       <div>
         <div id="overview"></div>
         <section>
@@ -97,7 +90,6 @@
 
             As the industry evolves, smaller operators must find innovative ways to build customer loyalty without the extensive resources available to their larger competitors. <br>
         </section>
-
         <section id="problem">
           <h3 class="text-2xl font-bold pb-3">Problem</h3>
           <ul class="ml-5">
@@ -109,71 +101,68 @@
         </section>
         <section id="solution">
           <h3 class="text-2xl font-bold pb-3">Solution</h3>
-
-          Reducing costs. Clear cost savings are identifiable on three major levels: system management, transactional, and customer acquisition. A blockchain-based loyalty rewards program should reduce the resources required for system management and accounting. In addition the user-friendly technology, the personalised mobile applications, and the integration with social media, should boost customer retention and reduce Customer Acquisition Costs.
-
-          Enabling a frictionless system. Through a decentralised technology solution, blockchain is centralising the customer’s loyalty programs. Loyalty providers decide how and with whom the customer uses these rewards, but from a consumer perspective, his/her ability to access and manage them is practically frictionless.
-
-          Making the process near real-time. Blockchain can enable a transaction to be recorded and accessed by multiple involved parties in near real time, increasing the chance that a loyalty rewards program provider can cut through coordination inertia to credit points faster. From a customer perspective this means an immediate and independent capability to earn and send the value of the accredited points, instead of incurring in delays and approval processes.
-
-          Providing a secure environment. Blockchain creates an immutable and time-stamped distributed database entry of every single transaction ever made, making each transaction and its record easily traceable, but also rendering them irreversible, preventing double spending, fraud, abuse, and any other type of manipulation of the transactions.
-
-          Creating unique business opportunities. A loyalty rewards program provider with a well-developed program will have unique opportunities to offer value-added services to other businesses.
-
-          Implementing a Blockchain-based LRE
-
-          The key advantage of a Blockchain-based LRE is the streamlining of the creation of a rewards network. The strength of the Blockchain is in its ability to create scalable, interconnected networks, where the data is mutually verifiable by all parties and preserved in a tamper resistant fashion. Where this helps the hospitality industry is the ability to deploy rewards networks to external vendors, allowing customers to spend points earned at the hotel elsewhere such as a retailer, movie theatre, or restaurant. Blockchain technology allows for the hotel to assign a specific monetary value to each point and have external vendors accept it at an agreed upon amount -- either at the initial value or lower. For instance, a luxury retailer could accept the points at a lower, deflated value, while a budget-oriented retailer could accept them at face value. All of this is done behind the scenes -- fully integrated into both parties’ Point of Sale (POS) and management systems -- providing a seamless experience for the customer and a headache-free point- cash reconciliation process for both parties’ accounting departments. This process works because of a system of public and private blockchains. The private blockchain would hold data regarding the rewards available from the specific vendor / hotels; the public blockchain would hold transaction data as well as quantities available of rewards. These two blockchains would reconcile via a smart contract whenever a customer makes a reward purchase. While this may sound complicated, the good news is the entire system is designed to be plug and play. It integrates fully into the hotel’s existing Hotel Management System (HMS) and Point of Sale system. Below are some screenshots of the system. Remember, the system is fully customizable and these screenshots are merely meant to be illustrative and not exhaustive.
-
-          What is Quorum DLT?
-
-          Quorum is an Ethereum based distributed ledger technology, another term for Blockchain. The objective behind this to provide a permissioned (private) implementation of Ethereum which supports transactions and contract privacy. Quorum is developed by JP Morgan as part of the bank’s research into ways Blockchain could improve transaction clearing and settlement. The platform is open source, and free to use.
-
-          Quorum™ DLT (Distributed Ledger Technology) is a private blockchain protocol developed by the American investment bank JP Morgan with the purpose of providing a permissioned and private implementation of Ethereum that supports transaction and contract privacy. Quorum™ DLT is ideal for any application requiring high speed and high throughput processing of private transactions within a permissioned group of known participants. Quorum™ DLT addresses specific challenges to blockchain technology adoption within the financial industry, and beyond.
-
-          Features
-
-          * User’s interface: Mobile app on Apple Store and Android, website control panel and dashboard
-          * Integration: Customer Management System (CMS), Point Of Sales (POS), databases and data analytics softwares
-          * Token branding and value: Established by hotel operator
-          * Vendors’ network: Established by hotel operator
-          * Transaction method: QR Code, Barcode, NFC
-          * Privacy regulation: According to national Law
-          </p>
+          <ul class="ml-5">
+            <li><strong>Lowering costs.</strong> Significant cost reductions are observable across three key areas: system management, transaction handling, and customer acquisition. A blockchain-driven loyalty rewards system can streamline system management and accounting processes. Furthermore, user-friendly technology, personalized mobile apps, and social media integration can enhance customer loyalty and lower the CAC.</li>
+            <li><strong>Seamless system.</strong> Blockchain’s decentralized technology simplifies the management of loyalty programs for customers. While loyalty providers control how and where rewards are used, customers experience a seamless, easy-to-manage interface for accessing and utilizing their rewards.</li>
+            <li><strong>Near-instant processes.</strong> Blockchain allows transactions to be recorded and shared with all involved parties almost instantly. This reduces delays and accelerates crediting of loyalty points. From a customer’s perspective, this means they can immediately earn and redeem points without waiting for approval or encountering delays.</li>
+            <li><strong>Secure environment.</strong> Blockchain creates an unchangeable, time-stamped distributed ledger of every transaction, making each action traceable and irreversible. This helps prevent double spending, fraud, abuse, or any other tampering with loyalty program transactions.</li>
+            <li><strong>New business opportunities.</strong> A well-executed blockchain-based loyalty program enables providers to offer unique value-added services to other businesses, unlocking new potential revenue streams and partnerships.</li>
+          </ul>
         </section>
-         <section id="blockchain">
-        <details>
-          <summary class="collapsible py-4 font-bold">What is blockchain?</summary>
- 
-  <code class="content p-8">
 
-            <strong>Blockchain:</strong> a growing and immutable list of records (or blocks) linked to each other. Each record contains cryptographic data of previous block, a timestamp, and transaction information.<br><br>
-          <strong>Public Chain:</strong> a blockchain accessible to the public, where all data can be inspected and verified.<br><br>
-           <strong> Private Chain:</strong> a blockchain that is permissioned, with access controls restricted to a specific network. <br><br>
-          <strong>Smart Contract:</strong> a computer protocol to digitally verify or enforce the negotiation or performance of a contract, allowing transactions without third parties.<br><br>
-          </code>
+        Implementing a Blockchain-based LRE
 
-        </details>
-      </section>
-        
+        The key advantage of a Blockchain-based LRE is the streamlining of the creation of a rewards network. The strength of the Blockchain is in its ability to create scalable, interconnected networks, where the data is mutually verifiable by all parties and preserved in a tamper resistant fashion. Where this helps the hospitality industry is the ability to deploy rewards networks to external vendors, allowing customers to spend points earned at the hotel elsewhere such as a retailer, movie theatre, or restaurant. Blockchain technology allows for the hotel to assign a specific monetary value to each point and have external vendors accept it at an agreed upon amount -- either at the initial value or lower. For instance, a luxury retailer could accept the points at a lower, deflated value, while a budget-oriented retailer could accept them at face value. All of this is done behind the scenes -- fully integrated into both parties’ Point of Sale (POS) and management systems -- providing a seamless experience for the customer and a headache-free point- cash reconciliation process for both parties’ accounting departments. This process works because of a system of public and private blockchains. The private blockchain would hold data regarding the rewards available from the specific vendor / hotels; the public blockchain would hold transaction data as well as quantities available of rewards. These two blockchains would reconcile via a smart contract whenever a customer makes a reward purchase. While this may sound complicated, the good news is the entire system is designed to be plug and play. It integrates fully into the hotel’s existing Hotel Management System (HMS) and Point of Sale system. Below are some screenshots of the system. Remember, the system is fully customizable and these screenshots are merely meant to be illustrative and not exhaustive.
+
+        What is Quorum DLT?
+
+        Quorum is an Ethereum based distributed ledger technology, another term for Blockchain. The objective behind this to provide a permissioned (private) implementation of Ethereum which supports transactions and contract privacy. Quorum is developed by JP Morgan as part of the bank’s research into ways Blockchain could improve transaction clearing and settlement. The platform is open source, and free to use.
+
+        Quorum™ DLT (Distributed Ledger Technology) is a private blockchain protocol developed by the American investment bank JP Morgan with the purpose of providing a permissioned and private implementation of Ethereum that supports transaction and contract privacy. Quorum™ DLT is ideal for any application requiring high speed and high throughput processing of private transactions within a permissioned group of known participants. Quorum™ DLT addresses specific challenges to blockchain technology adoption within the financial industry, and beyond.
+
+        Features
+
+        * User’s interface: Mobile app on Apple Store and Android, website control panel and dashboard
+        * Integration: Customer Management System (CMS), Point Of Sales (POS), databases and data analytics softwares
+        * Token branding and value: Established by hotel operator
+        * Vendors’ network: Established by hotel operator
+        * Transaction method: QR Code, Barcode, NFC
+        * Privacy regulation: According to national Law
+        </p>
+        </section>
+        <section id="blockchain">
+          <details>
+            <summary class="collapsible py-4 font-bold">What is blockchain?</summary>
+
+            <code class="content p-8">
+
+              <strong>Blockchain:</strong> a growing and immutable list of digital records (or blocks) linked to each other and hosted on a ledger. Each record contains cryptographic data of previous block, a timestamp, and transaction information.<br><br>
+              <strong>Public Chain:</strong> a blockchain accessible to the public, where all data can be inspected and verified.<br><br>
+              <strong> Private Chain:</strong> a blockchain that is permissioned, with access controls restricted to a specific network. <br><br>
+              <strong>Smart Contract:</strong> a computer protocol to digitally verify or enforce the negotiation or performance of a contract, allowing transactions without third parties.<br><br>
+            </code>
+
+          </details>
+        </section>
+
       </div>
     </div>
-  </div>
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("open");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
+  </main>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("open");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
     }
-  });
-}
-</script>
+  </script>
 </body>
 
 </html>
