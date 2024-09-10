@@ -26,23 +26,30 @@
   <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#115e59">
   <link rel="canonical" href="https://servpost.email" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link href="https://unpkg.com/pattern.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <style>
          html {
          scroll-behavior: smooth; 
          }
+    :target {
+  scroll-margin-top: 80px;
+}
+
+
       </style>
 </head>
 
 <body>
-        <nav class="w-full fixed bg-yellow-600 h-12">
+        <nav class="w-full fixed bg-yellow-600 h-12 mb-10">
           <ul class="text-sm max-w-4xl mx-auto px-8 items-center">
   <li class="mr-6  font-bold text-yellow-800">LOYALTIX  </li>
             <li class="mr-6">
-    <a href="#Overview">Overview</a>
+    <a href="#overview">Overview</a>
   </li>
   <li class="mr-6">
-    <a href="#">Current challenges</a>
+    <a href="#challenges">Challenges</a>
   </li>
   <li class="mr-6">
     <a class="text-blue-500 hover:text-blue-800" href="#">Link</a>
@@ -56,12 +63,12 @@
           
         </nav>
 
-  <div class="w-full h-40 bg-yellow-600"></div>
+  <div class="w-full h-40 bg-yellow-600 pattern-triangles-md"></div>
   <header class="container pt-20 max-w-4xl mx-auto px-8">
 
     <div>
       <hgroup>
-        <p class="text-4xl text-yellow-600">LOYALTIX</p><br>
+        <p class="text-4xl text-yellow-800">LOYALTIX</p><br>
         <h1 class="text-4xl font-bold">A blockchain-based Loyalty Reward Token (LRT) for the hospitality business in Asia-Pacific</h1>
 
         <p>High-level product strategy and technical architecture</p>
@@ -71,7 +78,8 @@
     </div>
     <div class="flex flex-row pt-12">
       <div>
-        <section id="Overview">
+        <div id="overview"></div>
+        <section>
           <h3 class="text-2xl font-bold pb-3">Overview</h3>
           <p>
             The hospitality industry in the Asia-Pacific region is highly competitive, with large international hotel chains competing alongside regional and local players. A key advantage for large incumbents is their robust rewards programs, designed to encourage customer loyalty by offering perks and discounts, ultimately reducing Customer Acquisition Costs (CAC). However, developing such programs presents significant challenges, particularly for smaller, independent hotels that lack resources and capital. <br><br>
@@ -81,8 +89,8 @@
             As the industry evolves, smaller operators must find innovative ways to build customer loyalty without the extensive resources available to their larger competitors. <br>
         </section>
 
-        <section>
-          <h3 class="text-2xl font-bold pb-3">Current challenges</h3>
+        <section id="challenges">
+          <h3 class="text-2xl font-bold pb-3">Challenges</h3>
           <ul class="ml-5">
             <li><strong>Network and setup costs</strong> Traditional loyalty programs are challenging to establish, requiring substantial investment and resources to manage. The effectiveness of these programs depends on building a network of vendors willing to accept loyalty points as currency. However, vendors may hesitate to participate due to concerns about delayed payments or the risk of data breaches. Additionally, considerable resources are needed to validate transactions.</li>
             <li><strong>System integration and intermediaries. </strong> The absence of standardized systems leads to the need for complex integration between various platforms and entities, increasing both costs and security risks. Further complications arise from the involvement of intermediaries such as banks, which add extra costs and complexity.</li>
