@@ -313,25 +313,24 @@
         
          <section id="modal">
         <h2>Modal</h2>
-        <button class="contrast" data-target="modal-example" onclick="toggleModal(event)">
-          Launch demo modal
+        <button class="secondary" data-target="modal-example" onclick="toggleModal(event)">
+          Launch demo
         </button>
       </section>
         
         <dialog id="modal-example">
       <article>
-        <header>
+        <div>
           <button
             aria-label="Close"
             rel="prev"
+                  class="text-white"
             data-target="modal-example"
             onclick="toggleModal(event)"
           ></button>
           <h3>Confirm your action!</h3>
-        </header>
-        <p>
-          Cras sit amet 
-        </p>
+        </div>
+        <img alt="Loyaltix" class="w-full" src="https://cdn.lomb.st/temp/LRE.png">
         <footer>
           <button
             role="button"
@@ -340,9 +339,7 @@
             onclick="toggleModal(event)"
           >
             Cancel</button
-          ><button autofocus data-target="modal-example" onclick="toggleModal(event)">
-            Confirm
-          </button>
+          >
         </footer>
       </article>
     </dialog>
