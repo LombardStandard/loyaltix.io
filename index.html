@@ -1,207 +1,189 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-
-<head>
-  <meta charset="utf-8">
-  <title>Loyaltix</title>
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#1e293b">
-  <meta name="author" content="Loyaltix" />
-  <meta name="description" content="A blockchain-based Loyalty Reward Token (LRT) for the hospitality industry">
-  <meta property="og:title" content="Loyaltix - Loyalty Reward Token (LRT)">
-  <meta property="og:description" content="A blockchain-based Loyalty Reward Token (LRT) for the hospitality industry">
-  <meta property="og:image" content="https://cdn.lomb.st/mailserv/servpost-share.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1280">
-  <meta property="og:image:height" content="640">
-  <meta property="og:url" content="https://servpost.email">
-  <meta property="og:site_name" content="Loyaltix">
-  <meta property="og:type" content="website">
-  <meta name="color-scheme" content="light dark" />
-  <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#115e59">
-  <link rel="canonical" href="https://servpost.email" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html {
+  <head>
+    <meta charset="utf-8">
+    <title>Loyaltix</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#1e293b">
+    <meta name="author" content="Loyaltix" />
+    <meta name="description" content="A blockchain-based Loyalty Reward Ecosystem (LRE) for the hospitality industry">
+    <meta property="og:title" content="Loyaltix - Loyalty Reward Ecosystem (LRE)">
+    <meta property="og:description" content="A blockchain-based Loyalty Reward Ecosystem (LRE) for the hospitality industry">
+    <meta property="og:image" content="https://cdn.lomb.st/mailserv/servpost-share.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:url" content="https://servpost.email">
+    <meta property="og:site_name" content="Loyaltix">
+    <meta property="og:type" content="website">
+    <meta name="color-scheme" content="light dark" />
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#115e59">
+    <link rel="canonical" href="https://servpost.email" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
       scroll-behavior: smooth;
-    }
-
-    :target {
+      }
+      :target {
       scroll-margin-top: 70px;
-    }
-
-    nav,
-    header {
+      }
+      nav,
+      header {
       --s: 100px;
       /* control the size*/
       --c1: #1e293b;
       --c2: #0f172a;
       --c3: #020617;
       background:
-        repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
-        repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
+      repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+      repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
       background-size: var(--s) calc(var(--s)*0.577);
-    }
-  </style>
-</head>
-
-<body class="bg-slate-200">
-  <nav class="w-full fixed h-12 mb-10 select-none z-50">
-    <ul class="text-sm px-8 items-center text-slate-400">
-      <li class="text-lg mr-6 font-extrabold text-white"><a href="#head">LOYALTIX</a></li>
-      <li class="mr-6">
-        <a href="#overview">Overview</a>
-      </li>
-      <li class="mr-6">
-        <a href="#problem">Problem</a>
-      </li>
-      <li class="mr-6">
-        <a href="#solution">Solution</a>
-      </li>
-      <li class="mr-6">
-        <a href="#implementation">Implementation</a>
-      </li>
-    </ul>
-  </nav>
-  <header class="w-full h-40 select-none" id="head"></header>
-  <main class="container pt-20 max-w-3xl mx-auto px-8 select-none">
-    <hgroup>
-      <h1 class="text-3xl font-bold">Loyaltix: a blockchain-based Loyalty Reward Token (LRT) for the hospitality industry</h1>
-      <p>High-level product strategy and technical architecture</p>
-    </hgroup>
-    <code>March 2019</code>
-    <div class="pt-12">
+      }
+    </style>
+  </head>
+  <body class="bg-slate-200">
+    <nav class="w-full fixed h-12 mb-10 select-none z-50">
+      <ul class="text-sm px-8 items-center text-slate-400">
+        <li class="text-lg mr-6 font-extrabold text-white"><a href="#head">LOYALTIX</a></li>
+        <li class="mr-6">
+          <a href="#overview">Overview</a>
+        </li>
+        <li class="mr-6">
+          <a href="#problem">Problem</a>
+        </li>
+        <li class="mr-6">
+          <a href="#solution">Solution</a>
+        </li>
+        <li class="mr-6">
+          <a href="#features">Features</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="w-full h-40 select-none" id="head"></header>
+    <main class="container pt-20 max-w-3xl mx-auto px-8 select-none">
+      <hgroup>
+        <h1 class="text-3xl font-bold">Loyaltix: a blockchain-based Loyalty Reward Ecosystem (LRE) for the hospitality industry</h1>
+        <p>High-level product strategy and technical architecture</p>
+      </hgroup>
+      <code>March 2019</code>
+      <div class="pt-12">
       <section id="overview">
         <h3 class="text-2xl font-bold pb-3">Overview</h3>
         <p>
           The hospitality industry is highly competitive, with large international hotel chains alongside with regional and local players. A key advantage for large incumbents is their robust rewards programs, designed to encourage customer loyalty by offering perks and discounts, ultimately reducing Customer Acquisition Costs (CAC). However, developing such programs presents significant challenges, particularly for smaller chains or independent hotels that lack resources and capital. <br><br>
-
           One of the primary difficulties in building a rewards program is the need for partnerships with external vendors that allow customers to obtain a higher experience by spending points beyond the hotel stay. Large hotel chains can forge these partnerships with retail stores and entertainment venues, providing customers with greater flexibility in redeeming their points. Smaller chains or independent hotels, however, struggle to establish such networks, which puts them at a competitive disadvantage. Moreover, rewards programs are increasingly susceptible to fraud, with dark market communities actively selling stolen loyalty points. While large hotel chains can absorb the financial losses from fraud and hacking, smaller hotels are more vulnerable to the consequences, potentially facing significant financial and reputational harm. <br><br>
-
-          As the industry evolves, small operators must find innovative ways to build customer loyalty without the extensive resources available to their larger competitors. 
-      </section><br>
+          As the industry evolves, small operators must find innovative ways to build customer loyalty without the extensive resources available to their larger competitors.
+      </section>
+      <br>
       <section id="problem">
         <h3 class="text-2xl font-bold pb-3">Problem</h3>
         <ul class="ml-5">
-          <li><strong>Network and setup costs.</strong> Traditional loyalty programs are challenging to establish, requiring substantial investment and resources to manage. The effectiveness of these programs depends on building a network of vendors willing to accept loyalty points as currency. However, vendors may hesitate to participate due to concerns about delayed payments or the risk of data breaches. Additionally, considerable resources are needed to validate transactions.</li>
-          <li><strong>Complex system integration. </strong> The absence of standardized systems leads to the need for complex integration between various platforms and entities, increasing both costs and security risks. Further complications arise from the involvement of intermediaries such as banks, which add extra costs and complexity.</li>
-          <li><strong>Low customer retention. </strong>From the customer's perspective, loyalty programs can be restrictive, offering limited flexibility in redeeming rewards, which reduces the usability of points. Inactive accounts, low redemption rates, overlapping rewards, lengthy approval processes, time delays, and high transaction fees all contribute to low customer retention.</li>
-          <li><strong>Balance sheet liabilities.</strong> A significant issue for program operators is the accumulation of unredeemed rewards, which are recorded as liabilities on their balance sheets.</li>
+          <li><strong class="text-red-700">Network and setup costs.</strong> Traditional loyalty programs are challenging to establish, requiring substantial investment and resources to manage. The effectiveness of these programs depends on building a network of vendors willing to accept loyalty points as currency. However, vendors may hesitate to participate due to concerns about delayed payments or the risk of data breaches. Additionally, considerable resources are needed to validate transactions.</li>
+          <li><strong class="text-red-700">Complex system integration. </strong> The absence of standardized systems leads to the need for complex integration between various platforms and entities, increasing both costs and security risks. Further complications arise from the involvement of intermediaries such as banks, which add extra costs and complexity.</li>
+          <li><strong class="text-red-700">Low customer retention. </strong>From the customer's perspective, loyalty programs can be restrictive, offering limited flexibility in redeeming rewards, which reduces the usability of points. Inactive accounts, low redemption rates, overlapping rewards, lengthy approval processes, time delays, and high transaction fees all contribute to low customer retention.</li>
+          <li><strong class="text-red-700">Balance sheet liabilities.</strong> A significant issue for program operators is the accumulation of unredeemed rewards, which are recorded as liabilities on their balance sheets.</li>
         </ul>
-      </section><br>
+      </section>
+      <br>
       <section id="solution">
         <h3 class="text-2xl font-bold pb-3">Solution</h3>
         <ul class="ml-5">
-          <li><strong>Lowering costs.</strong> Significant cost reductions are observable across three key areas: system management, transaction handling, and customer acquisition. A blockchain-driven loyalty rewards system can streamline system management and accounting processes. Furthermore, user-friendly technology, personalized mobile apps, and social media integration can enhance customer loyalty and lower the CAC.</li>
-          <li><strong>Seamless integration.</strong> Blockchain’s decentralized technology simplifies the management of loyalty programs for customers. While vendors control how and where rewards are used, customers experience a seamless, easy-to-manage interface for accessing and utilizing their rewards.</li>
-          <li><strong>Customer satisfaction.</strong> Blockchain allows transactions to be recorded and shared with all involved parties almost instantly. This reduces delays and accelerates crediting of loyalty points. From a customer’s perspective, this means they can immediately earn and redeem points without waiting for approval or encountering delays.</li>
-          <li><strong>Secure environment.</strong> Blockchain creates an unchangeable, time-stamped distributed ledger of every transaction, making each action traceable and irreversible. This helps prevent double spending, fraud, abuse, or any other tampering with loyalty program transactions.</li>
+          <li><strong class="text-green-700">Lowering costs.</strong> Significant cost reductions are observable across three key areas: system management, transaction handling, and customer acquisition. A blockchain-driven loyalty rewards system can streamline system management and accounting processes. Furthermore, user-friendly technology, personalized mobile apps, and social media integration can enhance customer loyalty and lower the CAC.</li>
+          <li><strong class="text-green-700">Seamless integration.</strong> Blockchain’s decentralized technology simplifies the management of loyalty programs for customers. While vendors control how and where rewards are used, customers experience a seamless, easy-to-manage interface for accessing and utilizing their rewards.</li>
+          <li><strong class="text-green-700">Customer satisfaction.</strong> Blockchain allows transactions to be recorded and shared with all involved parties almost instantly. This reduces delays and accelerates crediting of loyalty points. From a customer’s perspective, this means they can immediately earn and redeem points without waiting for approval or encountering delays.</li>
+          <li><strong class="text-green-700">Financial safety.</strong> Blockchain creates a permanent, time-stamped distributed ledger of every transaction, making each action traceable, irreversible and immune to fraud. In addition, by turning the tokens to users' wallet, hotel operators can free their balance sheet from any liability arising from future, unpredicatble spending.</li>
         </ul>
-      </section><br>
-      <div>
-          <details>
-            <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">What is blockchain?</summary>
-
-            <code class="content p-8">
-
-              <strong>Blockchain:</strong> a growing and immutable list of digital records (or blocks) linked to each other and hosted on a ledger. Each record contains cryptographic data of previous block, a timestamp, and transaction information.<br><br>
-              <strong>Public Chain:</strong> a blockchain accessible to the public, where all data can be inspected and verified.<br><br>
-              <strong> Private Chain:</strong> a blockchain that is permissioned, with access controls restricted to a specific network. <br><br>
-              <strong>Smart Contract:</strong> a computer protocol to digitally verify or enforce the negotiation or performance of a contract, allowing transactions without third parties.<br>
-            </code>
-
-          </details>
-        </div>
-      <div>
-          <details>
-            <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">What is Quorum™ TLD?</summary>
-
-            <code class="content p-8">
-
-              <strong>Quorum™ DLT (Distributed Ledger Technology)</strong>  is a private blockchain protocol developed by the American investment bank JP Morgan with the purpose of providing a permissioned implementation of the Ethereum blockchain. <br><br>
-              The protocol supports transaction and contract privacy specifically for the financial industry and is ideal for any application requiring high speed and throughput processing of private transactions within a group of known participants. 
-            </code>
-
-          </details>
-        </div>
-      <section id="implementation"><br>
-        <h3 class="text-2xl font-bold pb-3">Implementation</h3>
-        The strength of the Blockchain is its ability to create scalable, interconnected networks, where the data is instantly verifiable and preserved in a tamper-resistant ledger. For the hospitality industry it means easy deployment of rewards networks to external vendors and robust security for all parties. Blockchain technology allows the hotel to assign a specific monetary value to each token (or point) and have external vendors accept it at an agreed-upon amount, either at initial value or lower. For instance, a luxury retailer could accept the points at a lower, deflated value, while a budget retailer could accept them at face value. This process is fully integrated into each parties’ Point of Sale (POS) and management systems, including reconciliation process for accounting departments. <br><br>
-
-        <strong>Loyaltix</strong> is composed of both public and private blockchains. The private blockchain would hold data regarding the rewards available from the specific vendor, while the public blockchain would hold transaction data as well as quantities available of rewards. These two blockchains would reconcile via a smart contract whenever a customer makes a reward purchase. The entire system is designed to be plug and play and it integrates fully into the hotel’s existing management systems and POS systems.
-
-        
-      </section><br>
-      <section id="features">
-        <h3 class="text-2xl font-bold pb-3">Features</h3>        
-          <details>
-            <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">Key benefits of LRT</summary>
-            <div class="overflow-auto">
-<table class="table-fixed">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Security</th>
-      <th>Operations</th>
-      <th>Adoption</th>
-      <th>Data</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>VENDOR</td>
-      <td>Traceable</td>
-      <td>Intuitive</td>
-      <td>Wider adoption</td>
-      <td>Data-driven</td>
-    </tr>
-    <tr>
-      <td>USER</td>
-      <td>The Eagles</td>
-      <td>1972</td>
-    </tr>
-  </tbody>
-</table>
-               </div>
-</details>
-
-       
-
-        
-        Features
-
-        * User’s interface: Mobile app on Apple Store and Android, website control panel and dashboard
-        * Integration: Customer Management System (CMS), Point Of Sales (POS), databases and data analytics softwares
-        * Token branding and value: Established by hotel operator
-        * Vendors’ network: Established by hotel operator
-        * Transaction method: QR Code, Barcode, NFC
-        * Privacy regulation: According to national Law
-        </p>
       </section>
-    </div>
-  </main>
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("open");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-  </script>
-</body>
-
+      <br>
+      <div>
+        <details>
+          <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">What is blockchain?</summary>
+          <code class="content p-8">
+          <strong>Blockchain:</strong> a growing and immutable list of digital records (or blocks) linked to each other and hosted on a ledger. Each record contains cryptographic data of previous block, a timestamp, and transaction information.<br><br>
+          <strong>Public Chain:</strong> a blockchain accessible to the public, where all data can be inspected and verified.<br><br>
+          <strong> Private Chain:</strong> a blockchain that is permissioned, with access controls restricted to a specific network. <br><br>
+          <strong>Smart Contract:</strong> a computer protocol to digitally verify or enforce the negotiation or performance of a contract, allowing transactions without third parties.<br>
+          </code>
+        </details>
+      </div>
+      <div>
+        <details>
+          <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">What is Quorum™ TLD?</summary>
+          <code class="content p-8">
+          <strong>Quorum™ DLT (Distributed Ledger Technology)</strong> is a private blockchain protocol developed by the American investment bank JP Morgan with the purpose of providing a permissioned implementation of the Ethereum blockchain. <br><br>
+          The protocol supports transaction and contract privacy specifically for the financial industry and is ideal for any application requiring high speed and throughput processing of private transactions within a group of known participants.
+          </code>
+        </details>
+      </div>
+      <section id="features">
+        <br>
+        <h3 class="text-2xl font-bold pb-3">Features</h3>
+        The strength of blockchain is its ability to create scalable, interconnected networks, where the data is instantly verifiable and preserved in a tamper-resistant ledger. For the hospitality industry it means easy deployment of rewards networks to external vendors and robust security for all parties. The technology allows hotels to assign a specific monetary value to their point/token and have external vendors accept it at an agreed-upon amount, either at initial value or lower. The process is fully integrated into Point of Sale (POS) and Customer Management System (CMS), including reconciliation process for accounting departments. <br><br>
+        <strong>Loyaltix</strong> is composed of both public and private blockchains. The private blockchain would hold data regarding the rewards available from the specific vendor, while the public blockchain would hold transaction data as well as quantities available of rewards. These two blockchains would reconcile via a smart contract whenever a customer redeems the reward.<br><br>
+        <ul class="ml-5">
+          <li><strong>UI:</strong> wallet dashboard on mobile and desktop </li>
+          <li><strong>Integration:</strong> CMS, POS, APIs</li>
+          <li><strong>Token branding and value:</strong> established by hotel operator</li>
+          <li><strong>Vendors’ network:</strong> established by hotel operator</li>
+          <li><strong>Transaction method:</strong> QR code, barcode, NFC</li>
+          <li><strong>Privacy regulation:</strong> according to national laws</li>
+        </ul>
+      </section>
+      <br>
+      <div>
+        <details>
+          <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">Key benefits of Loyaltix</summary>
+          <div class="overflow-auto">
+            <table class="table-fixed">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Security</th>
+                  <th>Operations</th>
+                  <th>Adoption</th>
+                  <th>Data</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>VENDOR</td>
+                  <td>Traceable</td>
+                  <td>Intuitive</td>
+                  <td>Wider adoption</td>
+                  <td>Data-driven</td>
+                </tr>
+                <tr>
+                  <td>USER</td>
+                  <td>The Eagles</td>
+                  <td>1972</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </div>
+    </main>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("open");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
