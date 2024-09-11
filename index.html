@@ -64,30 +64,34 @@
         <li class="mr-6">
           <a href="#features">Features</a>
         </li>
+        <li class="mr-6">
+          <a href="#implementation">Implementation</a>
+        </li>
       </ul>
     </nav>
-    <header class="w-full h-40 select-none" id="head"></header>
+    <header class="w-full h-40 select-none" id="head">
+    </header>
     <main class="container pt-20 max-w-3xl mx-auto px-8 select-none">
       <hgroup>
-        <h1 class="text-3xl font-bold">Loyaltix: a blockchain-based Loyalty Reward Ecosystem (LRE) for the hospitality industry</h1>
+        <code>March 2019</code>
+        <h1 class="text-3xl font-bold mt-6">Loyaltix: a blockchain-based Loyalty Reward Ecosystem (LRE) for the hospitality industry</h1>
         <p>High-level product strategy and technical architecture</p>
+        <p class="mt-1"><a href="mailto:alberto.saruggia@icloud.com" class="text-blue-500 text-sm">alberto.saruggia@icloud.com</a></p>
       </hgroup>
-      <code>March 2019</code>
       <div class="pt-12">
       <section id="overview">
         <h3 class="text-2xl font-bold pb-3">Overview</h3>
-        <p>
-          The hospitality industry is highly competitive, with large international hotel chains alongside with regional and local players. A key advantage for large incumbents is their robust rewards programs, designed to encourage customer loyalty by offering perks and discounts, ultimately reducing Customer Acquisition Costs (CAC). However, developing such programs presents significant challenges, particularly for smaller chains or independent hotels that lack resources and capital. <br><br>
-          One of the primary difficulties in building a rewards program is the need for partnerships with external vendors that allow customers to obtain a higher experience by spending points beyond the hotel stay. Large hotel chains can forge these partnerships with retail stores and entertainment venues, providing customers with greater flexibility in redeeming their points. Smaller chains or independent hotels, however, struggle to establish such networks, which puts them at a competitive disadvantage. Moreover, rewards programs are increasingly susceptible to fraud, with dark market communities actively selling stolen loyalty points. While large hotel chains can absorb the financial losses from fraud and hacking, smaller hotels are more vulnerable to the consequences, potentially facing significant financial and reputational harm. <br><br>
-          As the industry evolves, small operators must find innovative ways to build customer loyalty without the extensive resources available to their larger competitors.
+        The hospitality industry is highly competitive, with large international hotel chains alongside with regional and local players. A key advantage for large incumbents is their robust rewards programs, designed to encourage customer loyalty by offering perks and discounts, ultimately reducing Customer Acquisition Costs (CAC). However, developing such programs presents significant challenges, particularly for smaller chains or independent hotels that lack resources and capital. <br><br>
+        One of the primary difficulties in building a rewards program is the need for partnerships with external vendors that allow customers to obtain a higher experience by spending points beyond the hotel stay. Large hotel chains can forge these partnerships with retail stores and entertainment venues, providing customers with greater flexibility in redeeming their points. Smaller chains or independent hotels, however, struggle to establish such networks, which puts them at a competitive disadvantage. Moreover, rewards programs are increasingly susceptible to fraud, with dark market communities actively selling stolen loyalty points. While large hotel chains can absorb the financial losses from fraud and hacking, smaller hotels are more vulnerable to the consequences, potentially facing significant financial and reputational harm. <br><br>
+        As the industry evolves, small operators must find innovative ways to build customer loyalty without the extensive resources available to their larger competitors.
       </section>
       <br>
       <section id="problem">
         <h3 class="text-2xl font-bold pb-3">Problem</h3>
         <ul class="ml-5">
           <li><strong class="text-red-700">Network and setup costs.</strong> Traditional loyalty programs are challenging to establish, requiring substantial investment and resources to manage. The effectiveness of these programs depends on building a network of vendors willing to accept loyalty points as currency. However, vendors may hesitate to participate due to concerns about delayed payments or the risk of data breaches. Additionally, considerable resources are needed to validate transactions.</li>
-          <li><strong class="text-red-700">Complex system integration. </strong> The absence of standardized systems leads to the need for complex integration between various platforms and entities, increasing both costs and security risks. Further complications arise from the involvement of intermediaries such as banks, which add extra costs and complexity.</li>
-          <li><strong class="text-red-700">Low customer retention. </strong>From the customer's perspective, loyalty programs can be restrictive, offering limited flexibility in redeeming rewards, which reduces the usability of points. Inactive accounts, low redemption rates, overlapping rewards, lengthy approval processes, time delays, and high transaction fees all contribute to low customer retention.</li>
+          <li><strong class="text-red-700">Complex system integration. </strong> The absence of standardized systems leads to complex integration between various platforms and entities, increasing both costs and security risks. Further complications and costs arise from intermediaries such as banks.</li>
+          <li><strong class="text-red-700">Low customer retention. </strong>From a customer's perspective, loyalty programs can be restrictive, offering limited flexibility in redeeming rewards, which reduces the usability of points. Inactive accounts, low redemption rates, overlapping rewards, lengthy approval processes, time delays, and high transaction fees all contribute to low customer retention.</li>
           <li><strong class="text-red-700">Balance sheet liabilities.</strong> A significant issue for program operators is the accumulation of unredeemed rewards, which are recorded as liabilities on their balance sheets.</li>
         </ul>
       </section>
@@ -106,10 +110,11 @@
         <details>
           <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">What is blockchain?</summary>
           <code class="content p-8">
-          <strong>Blockchain:</strong> a growing and immutable list of digital records (or blocks) linked to each other and hosted on a ledger. Each record contains cryptographic data of previous block, a timestamp, and transaction information.<br><br>
-          <strong>Public Chain:</strong> a blockchain accessible to the public, where all data can be inspected and verified.<br><br>
-          <strong> Private Chain:</strong> a blockchain that is permissioned, with access controls restricted to a specific network. <br><br>
-          <strong>Smart Contract:</strong> a computer protocol to digitally verify or enforce the negotiation or performance of a contract, allowing transactions without third parties.<br>
+          <strong>Blockchain</strong> is a growing and immutable list of digital records (or blocks) linked to each other and hosted on a ledger. Each record contains cryptographic data of previous block, a timestamp, and transaction information.<br><br>
+          <strong>Public Chain</strong> is a blockchain accessible to the public, where all data can be inspected and verified.<br><br>
+          <strong> Private Chain</strong> is a blockchain that is permissioned, with access controls restricted to a specific network. <br><br>
+          <strong>Smart Contract</strong> is a computer protocol to digitally verify or enforce the negotiation or performance of a contract, allowing transactions without third parties.<br><br>
+          <strong>Foreign Key</strong> is a field in one table of a database that uniquely identifies a row of another/same table.
           </code>
         </details>
       </div>
@@ -219,7 +224,7 @@
                   <td style="color:gray">★</td>
                 </tr>
                 <tr>
-                  <td>Instant spending</td>
+                  <td>Limitless spending</td>
                   <td></td>
                   <td style="color:gray">★</td>
                 </tr>
@@ -251,6 +256,24 @@
               </tbody>
             </table>
           </div>
+        </details>
+      </div>
+      <section id="implementation">
+        <br>
+        <h3 class="text-2xl font-bold pb-3">Implementation</h3>
+        John Smith is a die-hard Hotel ABC fan but is rarely able to get rewards for his loyalty. Using LRE John will be issued tokens to a unique and secure cryptographic anonymous address on <strong>public blockchain</strong> virtually securing his identity from exposing. The profile of John is saved on a fully secure <strong>private blockchain</strong> linking to public blockchain using address as a <strong>foreign key</strong>. The HMS systems can bind directly to the private chain using John’s mobile number and receive real time data.<br><br>
+        A <strong>smart contract</strong> dedicated to John keeps track of his profile records being controlled through a conditional private transaction owned by John. Once John’s smart contract is published on the Hotel ABC’s blockchain node, John would have assymetric keys to access the tokens issued anytime on a successful checkout.
+      </section>
+      <div>
+        <details>
+          <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">Step by step</summary>
+          <code class="content p-8">
+          <strong>Step 0: Confirming Dollar Value of Each Reward Point</strong> is a growing and immutable list of digital records (or blocks) linked to each other and hosted on a ledger. Each record contains cryptographic data of previous block, a timestamp, and transaction information.<br><br>
+          <strong>Public Chain</strong> is a blockchain accessible to the public, where all data can be inspected and verified.<br><br>
+          <strong> Private Chain</strong> is a blockchain that is permissioned, with access controls restricted to a specific network. <br><br>
+          <strong>Smart Contract</strong> is a computer protocol to digitally verify or enforce the negotiation or performance of a contract, allowing transactions without third parties.<br><br>
+          <strong>Foreign Key</strong> is a field in one table of a database that uniquely identifies a row of another/same table.
+          </code>
         </details>
       </div>
     </main>
