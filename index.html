@@ -2,7 +2,7 @@
 <html lang="en-gb">
   <head>
     <meta charset="utf-8">
-    <title>Loyaltix</title>
+    <title>Loyaltix LRE</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
@@ -51,9 +51,9 @@
   <body class="bg-slate-200">
     <nav class="w-full fixed h-12 mb-10 select-none z-50">
       <ul class="text-sm px-8 items-center text-slate-400">
-        <li class="text-lg mr-6 font-extrabold text-white"><a href="#head">LOYALTIX</a></li>
-        <li class="mr-6">
-          <a href="#overview">Overview</a>
+        <li class="flex flex-row text-md mr-6 font-extrabold text-white items-center">
+          <img alt="Loyaltix" class="w-4 mr-2" src="https://cdn.lomb.st/temp/loyaltix-logo.png">
+          <a href="#head">LOYALTIX LRE</a>
         </li>
         <li class="mr-6">
           <a href="#problem">Problem</a>
@@ -65,7 +65,10 @@
           <a href="#features">Features</a>
         </li>
         <li class="mr-6">
-          <a href="#implementation">Implementation</a>
+          <a href="#application">Application</a>
+        </li>
+        <li class="mr-6">
+          <a href="#specs">Specs</a>
         </li>
       </ul>
     </nav>
@@ -74,70 +77,63 @@
     <main class="container pt-20 max-w-3xl mx-auto px-8 select-none">
       <hgroup>
         <code>March 2019</code>
-        <h1 class="text-3xl font-bold mt-6">Loyaltix: a blockchain-based Loyalty Reward Ecosystem (LRE) for the hospitality industry</h1>
-        <p>High-level product strategy and technical architecture</p>
+        <h1 class="text-3xl font-bold mt-6">Loyaltix: a blockchain-based Loyalty Reward Ecosystem (LRE) for the hospitality industry </h1>
+        <p>High-level product strategy and architecture</p>
         <p class="mt-1"><a href="mailto:alberto.saruggia@icloud.com" class="text-blue-500 text-sm">alberto.saruggia@icloud.com</a></p>
       </hgroup>
-      <div class="pt-12">
+      <div class="pt-8">
       <section id="overview">
-        <h3 class="text-2xl font-bold pb-3">Overview</h3>
         The hospitality industry is highly competitive, with large international hotel chains alongside with regional and local players. A key advantage for large incumbents is their robust rewards programs, designed to encourage customer loyalty by offering perks and discounts, ultimately reducing Customer Acquisition Costs (CAC). However, developing such programs presents significant challenges, particularly for smaller chains or independent hotels that lack resources and capital. <br><br>
-        One of the primary difficulties in building a rewards program is the need for partnerships with external vendors that allow customers to obtain a higher experience by spending points beyond the hotel stay. Large hotel chains can forge these partnerships with retail stores and entertainment venues, providing customers with greater flexibility in redeeming their points. Smaller chains or independent hotels, however, struggle to establish such networks, which puts them at a competitive disadvantage. Moreover, rewards programs are increasingly susceptible to fraud, with dark market communities actively selling stolen loyalty points. While large hotel chains can absorb the financial losses from fraud and hacking, smaller hotels are more vulnerable to the consequences, potentially facing significant financial and reputational harm. <br><br>
-        As the industry evolves, small operators must find innovative ways to build customer loyalty without the extensive resources available to their larger competitors.
+        One of the primary difficulties in building a rewards program is the need for partnerships with external vendors that allow customers to obtain a higher experience by spending points beyond the hotel stay. Large hotel chains can forge these partnerships with retail stores and entertainment venues, providing customers with greater flexibility in redeeming their points. Smaller chains or independent hotels, however, struggle to establish such networks, which puts them at a competitive disadvantage. Moreover, rewards programs are increasingly susceptible to fraud, with dark market communities actively selling stolen loyalty points. While large hotel chains can absorb the financial losses from fraud and hacking, smaller hotels are more vulnerable to the consequences, potentially facing significant financial and reputational harm. As the industry evolves, small operators must find innovative ways to build customer loyalty without the extensive resources available to their larger competitors.
       </section>
       <br>
       <section id="problem">
         <h3 class="text-2xl font-bold pb-3">Problem</h3>
         <ul class="ml-5">
-          <li><strong class="text-red-700">Network and setup costs.</strong> Traditional loyalty programs are challenging to establish, requiring substantial investment and resources to manage. The effectiveness of these programs depends on building a network of vendors willing to accept loyalty points as currency. However, vendors may hesitate to participate due to concerns about delayed payments or the risk of data breaches. Additionally, considerable resources are needed to validate transactions.</li>
-          <li><strong class="text-red-700">Complex system integration. </strong> The absence of standardized systems leads to complex integration between various platforms and entities, increasing both costs and security risks. Further complications and costs arise from intermediaries such as banks.</li>
-          <li><strong class="text-red-700">Low customer retention. </strong>From a customer's perspective, loyalty programs can be restrictive, offering limited flexibility in redeeming rewards, which reduces the usability of points. Inactive accounts, low redemption rates, overlapping rewards, lengthy approval processes, time delays, and high transaction fees all contribute to low customer retention.</li>
-          <li><strong class="text-red-700">Balance sheet liabilities.</strong> A significant issue for program operators is the accumulation of unredeemed rewards, which are recorded as liabilities on their balance sheets.</li>
+          <li><strong >Network and setup costs.</strong> Traditional loyalty programs are challenging to establish, requiring substantial investment and resources to manage. The effectiveness of these programs depends on building a network of vendors willing to accept loyalty points as currency. However, vendors may hesitate to participate due to concerns about delayed payments or the risk of data breaches. Additionally, considerable resources are needed to validate transactions.</li>
+          <li><strong >Complex system integration. </strong> The absence of standardized systems leads to complex integration between various platforms and entities, increasing both costs and security risks. Further complications and costs arise from intermediaries such as banks.</li>
+          <li><strong >Low customer retention. </strong>From a customer's perspective, loyalty programs can be restrictive, offering limited flexibility in redeeming rewards, which reduces the usability of points. Inactive accounts, low redemption rates, overlapping rewards, lengthy approval processes, time delays, and high transaction fees all contribute to low customer retention.</li>
+          <li><strong >Balance sheet liabilities.</strong> A significant issue for program operators is the accumulation of unredeemed rewards, which are recorded as liabilities on their balance sheets.</li>
         </ul>
       </section>
       <br>
       <section id="solution">
         <h3 class="text-2xl font-bold pb-3">Solution</h3>
         <ul class="ml-5">
-          <li><strong class="text-green-700">Lowering costs.</strong> Significant cost reductions are observable across three key areas: system management, transaction handling, and customer acquisition. A blockchain-driven loyalty rewards system can streamline system management and accounting processes. Furthermore, user-friendly technology, personalized mobile apps, and social media integration can enhance customer loyalty and lower the CAC.</li>
-          <li><strong class="text-green-700">Seamless integration.</strong> Blockchain’s decentralized technology simplifies the management of loyalty programs for customers. While vendors control how and where rewards are used, customers experience a seamless, easy-to-manage interface for accessing and utilizing their rewards.</li>
-          <li><strong class="text-green-700">Customer satisfaction.</strong> Blockchain allows transactions to be recorded and shared with all involved parties almost instantly. This reduces delays and accelerates crediting of loyalty points. From a customer’s perspective, this means they can immediately earn and redeem points without waiting for approval or encountering delays.</li>
-          <li><strong class="text-green-700">Financial safety.</strong> Blockchain creates a permanent, time-stamped distributed ledger of every transaction, making each action traceable, irreversible and immune to fraud. In addition, by turning the tokens to users' wallet, hotel operators can free their balance sheet from any liability arising from future, unpredicatble spending.</li>
+          <li><strong >Lowering costs.</strong> Significant cost reductions are observable across three key areas: system management, transaction handling, and customer acquisition. A blockchain-driven loyalty rewards system can streamline system management and accounting processes. Furthermore, user-friendly technology, personalized mobile apps, and social media integration can enhance customer loyalty and lower the CAC.</li>
+          <li><strong >Seamless integration.</strong> Blockchain’s decentralized technology simplifies the management of loyalty programs for customers. While vendors control how and where rewards are used, customers experience a seamless, easy-to-manage interface for accessing and utilizing their rewards.</li>
+          <li><strong >Customer satisfaction.</strong> Blockchain allows transactions to be recorded and shared with all involved parties almost instantly. This reduces delays and accelerates crediting of loyalty points. From a customer’s perspective, this means they can immediately earn and redeem points without waiting for approval or encountering delays.</li>
+          <li><strong >Financial safety.</strong> Blockchain creates a permanent, time-stamped distributed ledger of every transaction, making each action traceable, irreversible and immune to fraud. In addition, by turning the tokens to users' wallet, hotel operators can free their balance sheet from any liability arising from future, unpredicatble spending.</li>
         </ul>
       </section>
       <br>
       <div>
         <details>
           <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">What is blockchain?</summary>
-          <code class="content p-8">
-          <strong>Blockchain</strong> is a growing and immutable list of digital records (or blocks) linked to each other and hosted on a ledger. Each record contains cryptographic data of previous block, a timestamp, and transaction information.<br><br>
-          <strong>Public Chain</strong> is a blockchain accessible to the public, where all data can be inspected and verified.<br><br>
-          <strong> Private Chain</strong> is a blockchain that is permissioned, with access controls restricted to a specific network. <br><br>
-          <strong>Smart Contract</strong> is a computer protocol to digitally verify or enforce the negotiation or performance of a contract, allowing transactions without third parties.<br><br>
-          <strong>Foreign Key</strong> is a field in one table of a database that uniquely identifies a row of another/same table.
-          </code>
+          <article class="content p-8">
+            <strong>Blockchain</strong> is a growing and immutable list of digital records (or blocks) linked to each other and hosted on a ledger. Each record contains cryptographic data of previous block, a timestamp, and transaction information. <strong>Public Chain</strong> is a blockchain accessible to the public, where all data can be inspected and verified. <strong> Private Chain</strong> is a blockchain that is permissioned, with access controls restricted to a specific network. <strong>Smart Contract</strong> is a computer protocol to digitally verify or enforce the negotiation or performance of a contract, allowing transactions without third parties. <strong>Foreign Key</strong> is a field in one table of a database that uniquely identifies a row of another/same table.
+          </article>
         </details>
       </div>
       <div>
         <details>
-          <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">What is Quorum™ TLD?</summary>
-          <code class="content p-8">
-          <strong>Quorum™ DLT (Distributed Ledger Technology)</strong> is a private blockchain protocol developed by the American investment bank JP Morgan with the purpose of providing a permissioned implementation of the Ethereum blockchain. <br><br>
-          The protocol supports transaction and contract privacy specifically for the financial industry and is ideal for any application requiring high speed and throughput processing of private transactions within a group of known participants.
-          </code>
+          <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">What is Quorum™ DLT?</summary>
+          <article class="content p-8">
+            <strong>Quorum™ DLT (Distributed Ledger Technology)</strong> is a private blockchain protocol developed by the American investment bank JP Morgan with the purpose of providing a permissioned implementation of the Ethereum blockchain. The protocol supports transaction and contract privacy specifically for the financial industry and is ideal for any application requiring high speed and throughput processing of private transactions within a group of known participants.
+          </article>
         </details>
       </div>
       <section id="features">
         <br>
         <h3 class="text-2xl font-bold pb-3">Features</h3>
         The strength of blockchain is its ability to create scalable, interconnected networks, where the data is instantly verifiable and preserved in a tamper-resistant ledger. For the hospitality industry it means easy deployment of rewards networks to external vendors and robust security for all parties. The technology allows hotels to assign a specific monetary value to their point/token and have external vendors accept it at an agreed-upon amount, either at initial value or lower. The process is fully integrated into Point of Sale (POS) and Customer Management System (CMS), including reconciliation process for accounting departments. <br><br>
-        <strong>Loyaltix</strong> is composed of both public and private blockchains. The private blockchain would hold data regarding the rewards available from the specific vendor, while the public blockchain would hold transaction data as well as quantities available of rewards. These two blockchains would reconcile via a smart contract whenever a customer redeems the reward.<br><br>
+        <strong>Loyaltix LRE</strong> is composed of both public and private blockchains. The private blockchain would hold data regarding the rewards available from the specific vendor, while the public blockchain would hold transaction data as well as quantities available of rewards. These two blockchains would reconcile via a smart contract whenever a customer redeems the reward.<br><br>
         <ul class="ml-5">
-          <li><strong>UI:</strong> wallet dashboard on mobile and desktop </li>
+          <li><strong>Interface:</strong> wallet dashboard on mobile and desktop </li>
           <li><strong>Integration:</strong> CMS, POS, APIs</li>
           <li><strong>Token branding and value:</strong> established by hotel operator</li>
           <li><strong>Vendors’ network:</strong> established by hotel operator</li>
-          <li><strong>Transaction method:</strong> QR code, barcode, NFC</li>
+          <li><strong>Transaction method:</strong> QR article, bararticle, NFC</li>
           <li><strong>Privacy regulation:</strong> according to national laws</li>
         </ul>
       </section>
@@ -258,24 +254,61 @@
           </div>
         </details>
       </div>
-      <section id="implementation">
+      <section id="application">
         <br>
-        <h3 class="text-2xl font-bold pb-3">Implementation</h3>
-        John Smith is a die-hard Hotel ABC fan but is rarely able to get rewards for his loyalty. Using LRE John will be issued tokens to a unique and secure cryptographic anonymous address on <strong>public blockchain</strong> virtually securing his identity from exposing. The profile of John is saved on a fully secure <strong>private blockchain</strong> linking to public blockchain using address as a <strong>foreign key</strong>. The HMS systems can bind directly to the private chain using John’s mobile number and receive real time data.<br><br>
-        A <strong>smart contract</strong> dedicated to John keeps track of his profile records being controlled through a conditional private transaction owned by John. Once John’s smart contract is published on the Hotel ABC’s blockchain node, John would have assymetric keys to access the tokens issued anytime on a successful checkout.
+        <h3 class="text-2xl font-bold pb-3">Application</h3>
+        John Smith is a die-hard Hotel ABC fan but is rarely able to get rewards for his loyalty. Using <strong>Loyaltix LRE</strong> John will be issued tokens to a unique and secure cryptographic anonymous address on <strong>public blockchain</strong> virtually securing his identity from exposing. The profile of John is saved on a fully secure <strong>private blockchain</strong> linking to public blockchain using address as a <strong>foreign key</strong>. The HMS systems can bind directly to the private chain using John’s email address and receive real time data.<br><br>
+        A <strong>smart contract</strong> dedicated to John keeps track of his profile records being controlled through a conditional private transaction owned by John. Once John’s smart contract is published on the Hotel ABC’s blockchain node, John would have assymetric keys to access the tokens issued anytime on a successful checkout.<br><br>
+        <ul class="ml-5">
+          <li><strong>Layer 8:</strong> User Interface </li>
+          <li><strong>Layer 7:</strong> LRE SDK</li>
+          <li><strong>Layer 6:</strong> Token & Incentivising Network</li>
+          <li><strong>Layer 5:</strong> LRE Permissioned Nodes</li>
+          <li><strong>Layer 4:</strong> AWS Virtual Machine & Databases</li>
+          <li><strong>Layer 3:</strong> Distributed Storage</li>
+          <li><strong>Layer 2:</strong> Network</li>
+          <li><strong>Layer 1:</strong> Hardware (SSD Servers)</li>
+        </ul>
       </section>
+      <br>
       <div>
         <details>
-          <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">Step by step</summary>
-          <code class="content p-8">
-          <strong>Step 0: Confirming Dollar Value of Each Reward Point</strong> is a growing and immutable list of digital records (or blocks) linked to each other and hosted on a ledger. Each record contains cryptographic data of previous block, a timestamp, and transaction information.<br><br>
-          <strong>Public Chain</strong> is a blockchain accessible to the public, where all data can be inspected and verified.<br><br>
-          <strong> Private Chain</strong> is a blockchain that is permissioned, with access controls restricted to a specific network. <br><br>
-          <strong>Smart Contract</strong> is a computer protocol to digitally verify or enforce the negotiation or performance of a contract, allowing transactions without third parties.<br><br>
-          <strong>Foreign Key</strong> is a field in one table of a database that uniquely identifies a row of another/same table.
-          </code>
+          <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">4-step process</summary>
+          <article class="content p-8">
+            <strong>#1: Setting dollar value of the reward point</strong><br>
+            Hotel ABC would need to confirm a value for each individual point.<br><br>
+            <strong>#2: Creating private wallets and smart contracts</strong><br>
+            John's ID will be assigned to a unique wallet on a public chain for the storage of tokens. John's profile is saved on a private chain linked to the public chain using email address as a foreign key. Hotel ABC's HMS links to the private chain to update data about spending and point conversion (using the preset ratio of point to dollar). A smart contract reconciles the spending and issues the appropriate number of tokens.<br><br>
+            <strong>#3: Intra-network trading</strong><br>
+            Vendors in the network would have a similar system of parallel private and public chains. The private chain would hold data regarding the rewards available from the specific vendor. The public blockchain would hold transaction data as well as quantities available of rewards. These two chains would reconcile using smart contracts whenever John redeems a reward.<br><br>
+            <strong>#4: Extra-network trading</strong><br>
+            John would have the option of converting the rewards tokens to other cryptocurrencies or other rewards points (at a non-preferential rate).
+          </article>
         </details>
       </div>
+      <div>
+        <details>
+          <summary class="collapsible p-4 rounded-sm bg-slate-300 font-bold">Main system components</summary>
+          <article class="content p-8">
+            <strong>SaaS/PaaS</strong><br>
+            The node as a service ecosystem helps a segment of end clients (hotels and customers) to quickly get onboarded on LRE blockchain and start using the service.<br><br>
+            <strong>Assets</strong><br>
+            Key components such as customer profile, enterprise profile and deposits.<br><br>
+            <strong>Proxy Re-encryption server</strong><br>
+            To ensure the transactions are encrypted through distributed servers. Existing
+            encryption tools like constellation or channels can also be used.<br><br>
+            <strong>Webhooks</strong><br>
+            Event notifications the end clients subscribe to.<br><br>
+            <strong>Proxy contracts</strong><br> 
+            Contracts that hotels can write on behalf of customers providing conditional grant of tokens.
+          </article>
+        </details>
+      </div>
+        <section id="specs">
+          <br>
+        <h3 class="text-2xl font-bold pb-3">Specs</h3>
+        </section>
+            <br>
     </main>
     <script>
       var coll = document.getElementsByClassName("collapsible");
@@ -292,5 +325,6 @@
         });
       }
     </script>
+    <script src="js/modal.js"></script>  
   </body>
 </html>
