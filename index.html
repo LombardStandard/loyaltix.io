@@ -32,10 +32,9 @@
       scroll-behavior: smooth;
       }
       :target {
-      scroll-margin-top: 70px;
+      scroll-margin-top: 110px;
       }
-      nav,
-      header {
+      nav {
       --s: 100px;
       /* control the size*/
       --c1: #1e293b;
@@ -49,7 +48,7 @@
     </style>
   </head>
   <body class="bg-slate-200">
-    <nav class="w-full flex flex-wrap sm:flex-row sticky top-0 select-none z-50 items-center text-slate-400 text-sm gap-x-8 gap-y-6 p-4 justify-start">
+    <nav class="w-full flex flex-wrap sm:flex-row sticky top-0 select-none z-50 items-center text-slate-400 text-sm gap-x-8 gap-y-6 sm:p-8 p-4 justify-start bg-transparent">
         <div class="flex flex-row text-md mr-6 font-extrabold text-white items-center">
           <img alt="Loyaltix" class="w-4 mr-2" src="https://cdn.lomb.st/temp/loyaltix-logo.png">
           <a href="#head">LOYALTIX</a>
@@ -60,8 +59,6 @@
         <div class="flex"><a href="#implementation">Implementation</a></div>
         <div class="flex"><a href="#specs">Specs</a></div>     
     </nav>
-    <header class="w-full h-40 hidden sm:flex select-none pointer-events-none" id="head">
-    </header>
     <main class="container pt-20 max-w-3xl mx-auto px-8 select-none pointer-events-none">
       <hgroup>
         <code>Tokyo, March 2019</code>
