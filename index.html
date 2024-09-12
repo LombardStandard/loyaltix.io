@@ -49,30 +49,18 @@
     </style>
   </head>
   <body class="bg-slate-200">
-    <nav class="flex w-full fixed h-12 mb-10 select-none z-50">
-      <ul class="flex flex-col sm:flex-row mt-0 text-sm px-8 items-center text-slate-400">
-        <li class="flex flex-row text-md mr-6 font-extrabold text-white items-center">
+    <nav class="w-full flex flex-wrap sm:flex-row sticky top-0 select-none z-50 items-center text-slate-400 text-sm gap-x-8 gap-y-6 p-4 justify-start">
+        <div class="flex flex-row text-md mr-6 font-extrabold text-white items-center">
           <img alt="Loyaltix" class="w-4 mr-2" src="https://cdn.lomb.st/temp/loyaltix-logo.png">
           <a href="#head">LOYALTIX</a>
-        </li>
-        <li class="mr-6">
-          <a href="#problem">Problem</a>
-        </li>
-        <li class="mr-6">
-          <a href="#solution">Solution</a>
-        </li>
-        <li class="mr-6">
-          <a href="#features">Features</a>
-        </li>
-        <li class="mr-6">
-          <a href="#implementation">Implementation</a>
-        </li>
-        <li class="mr-6">
-          <a href="#specs">Specs</a>
-        </li>
-      </ul>
+        </div>
+        <div class="flex"><a href="#problem">Problem</a></div>
+        <div class="flex"><a href="#solution">Solution</a></div>
+        <div class="flex"><a href="#features">Features</a></div>
+        <div class="flex"><a href="#implementation">Implementation</a></div>
+        <div class="flex"><a href="#specs">Specs</a></div>     
     </nav>
-    <header class="w-full h-80 sm:h-40 select-none pointer-events-none" id="head">
+    <header class="w-full h-40 invisible sm:visible select-none pointer-events-none" id="head">
     </header>
     <main class="container pt-20 max-w-3xl mx-auto px-8 select-none pointer-events-none">
       <hgroup>
